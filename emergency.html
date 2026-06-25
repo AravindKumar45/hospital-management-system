@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Handling - Operation Scheduling System</title>
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emergency Handling - Schedule an Emergency Appointment</h1>
+        <form action="#" method="POST" class="emergency-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="emergency-type">Type of Emergency</label>
+                <select id="emergency-type" name="emergency-type" required>
+                    <option value="">Select Emergency Type</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Appointment Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="priority">Urgency Level</label>
+                <select id="priority" name="priority" required>
+                    <option value="">Select Urgency</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Additional Details (Optional)</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Emergency Request</button>
+        </form>
+    </div>
+</body>
+</html>

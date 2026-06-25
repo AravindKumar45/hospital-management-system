@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Records - Operation Scheduling System</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Doctor Records - Operation Scheduling System</h1>
+
+        <div class="doctor-list">
+            <h2>Doctor Information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor ID</th>
+                        <th>Name</th>
+                        <th>Specialty</th>
+                        <th>Availability</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#D001</td>
+                        <td>Dr. John Smith</td>
+                        <td>Cardiologist</td>
+                        <td>Monday - Friday, 9:00 AM - 5:00 PM</td>
+                        <td>(555) 123-4567</td>
+                    </tr>
+                    <tr>
+                        <td>#D002</td>
+                        <td>Dr. Emily Davis</td>
+                        <td>Orthopedic</td>
+                        <td>Monday - Thursday, 8:00 AM - 4:00 PM</td>
+                        <td>(555) 987-6543</td>
+                    </tr>
+                    <tr>
+                        <td>#D003</td>
+                        <td>Dr. Michael Brown</td>
+                        <td>Surgeon</td>
+                        <td>Tuesday - Friday, 10:00 AM - 6:00 PM</td>
+                        <td>(555) 234-5678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="add-doctor">
+            <h2>Add New Doctor</h2>
+            <form action="#" method="POST" class="doctor-form">
+                <div class="form-group">
+                    <label for="doctor-name">Full Name</label>
+                    <input type="text" id="doctor-name" name="doctor-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-specialty">Specialty</label>
+                    <input type="text" id="doctor-specialty" name="doctor-specialty" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-availability">Availability</label>
+                    <input type="text" id="doctor-availability" name="doctor-availability" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor-contact">Contact Number</label>
+                    <input type="text" id="doctor-contact" name="doctor-contact" required>
+                </div>
+                <button type="submit" class="submit-btn">Add Doctor</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

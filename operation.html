@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Scheduling System</title>
+    <link rel="stylesheet" href="operation.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operation Scheduling System</h1>
+
+        <div class="current-appointments">
+            <h2>Current Scheduled Operations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operation ID</th>
+                        <th>Operation Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#001</td>
+                        <td>Heart Surgery</td>
+                        <td>2025-03-05</td>
+                        <td>09:00 AM</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td>Dental Check-up</td>
+                        <td>2025-03-06</td>
+                        <td>02:00 PM</td>
+                        <td><span class="status confirmed">Confirmed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="schedule-operation">
+            <h2>Schedule a New Operation</h2>
+            <form action="#" method="POST" class="operation-form">
+                <div class="form-group">
+                    <label for="operation-name">Operation Name</label>
+                    <input type="text" id="operation-name" name="operation-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="operation-date">Operation Date</label>
+                    <input type="date" id="operation-date" name="operation-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="operation-time">Operation Time</label>
+                    <input type="time" id="operation-time" name="operation-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="operation-description">Description (Optional)</label>
+                    <textarea id="operation-description" name="operation-description" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Schedule Operation</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
